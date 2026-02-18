@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IT ASSISTANT</string>
+    <string name="hint_message">תכתוב את ההודעה...</string>
+    <string name="setting_log_out">התנתקות</string>
+    <string name="drawer_settings">הגדרות</string>
+    <string name="admin_addUser">אדמין</string>
+    <string name="create_user_addUser">צור משתמש</string>
+    <string name="settings_settings">הגדרות</string>
+    <string name="confirm_password_addUser">אישור סיסמה:</string>
+    <string name="role_addUser">תפקיד</string>
+    <string name="rename_chat">שנה שם</string>
+    <string name="user_name_settings">שם משתמש</string>
+    <string name="workSpace_settings">חברה</string>
+    <string name="email_addUser">אימייל:</string>
+    <string name="id_AddUser">תעודת זהות</string>
+    <string name="password_addUser">סיסמה:</string>
+    <string name="email_log_in">אימייל</string>
+    <string name="password_log_in">סיסמה:</string>
+    <string name="account_settings">משתמש</string>
+    <string name="email_settings">אימייל</string>
+    <string name="name_settings">שם</string>
+    <string name="work_space_settings">מקום עבודה</string>
+    <string name="system_settings">מערכת</string>
+    <string name="drawer_new_chat">צ\'אט חדש</string>
+    <string name="log_in">התחבר</string>
+    <string name="contact_admin_log_in">אם שכחת סיסמה, דבר עם האדמין שלך</string>
+    <string name="add_a_user">הוסף משתמש</string>
+    <string name="first_name">שם:</string>
+    <string name="last_name">שם משפחה</string>
+    <string name="app_settings">אפליקציה</string>
+    <string name="appearance_settings">נראות</string>
+    <string name="language_settings">שפה</string>
+    <string name="english_settings">אנגלית</string>
+    <string name="employee_addUser">עובד</string>
+    <string name="delete_chat">מחק צ\'אט</string>
+    <string name="admin_settings_settings">הגדרות אדמין</string>
+    <string name="chats_label">צ\'אטים</string>
+    <string name="item_message_assistant_message">כגכ</string>
+    <string name="cancel">ביטול</string>
+    <string name="ok">אישור</string>
+    <string name="theme_system">אוטומטי</string>
+    <string name="theme_light">בהיר</string>
+    <string name="theme_dark">כהה</string>
+    <string name="theme_settings">נראות</string>
+
+
+</resources>

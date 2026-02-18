@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="0dp"
+    android:paddingEnd="4dp">
+
+    <TextView
+        android:id="@+id/textChatTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="6dp"
+        android:text="@string/chat_title"
+        android:textColor="@color/textColorMain"
+        android:textSize="@dimen/drawer_chat_title_textSize"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <ImageButton
+        android:id="@+id/buttonMore"
+        android:layout_width="@dimen/more_chat_options_size"
+        android:layout_height="@dimen/more_chat_options_size"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:src="@drawable/ic_more_chat_options"
+        android:contentDescription="@string/more_chat_options"
+        app:tint="@android:color/darker_gray" />
+
+</LinearLayout>
+

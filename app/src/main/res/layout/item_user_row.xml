@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_settings_section">
+
+    <TextView
+        android:id="@+id/userNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Last"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/settings_text_color"/>
+
+    <TextView
+        android:id="@+id/userEmailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email@example.com"
+        android:paddingTop="4dp"
+        android:textColor="@color/settings_text_color"/>
+
+    <TextView
+        android:id="@+id/userIdText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID: 123456789"
+        android:paddingTop="2dp"
+        android:textColor="@color/settings_text_color"/>
+
+    <TextView
+        android:id="@+id/userRoleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Role: EMPLOYEE"
+        android:paddingTop="2dp"
+        android:textColor="@color/settings_text_color"/>
+
+</LinearLayout>

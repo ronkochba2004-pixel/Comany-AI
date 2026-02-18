@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--  ////////////////////////Top bar START /////////////////////////////// -->
+        <RelativeLayout
+            android:id="@+id/customTopBar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/backgroundColor"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp">
+
+            <!-- Menu icon -->
+            <ImageButton
+                android:id="@+id/menuButton"
+                android:layout_width="@dimen/menu_button_width"
+                android:layout_height="@dimen/menu_button_width"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_menu"
+                app:tint="@color/textColorMain"
+                android:contentDescription="@string/menu_button" />
+
+            <!-- App title -->
+            <TextView
+                android:id="@+id/appTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/textColorMain"
+                android:textSize="@dimen/app_name_text_size"
+                android:layout_toEndOf="@id/menuButton"
+                android:layout_alignTop="@id/menuButton"
+                android:layout_alignBottom="@id/menuButton"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical" />
+
+
+        </RelativeLayout>
+
+        <!--  ////////////////////////Top bar END /////////////////////////////// -->
+
+
+
+
+
+        <FrameLayout
+            android:id="@+id/chatContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:overScrollMode="always" />
+
+            <ImageButton
+                android:id="@+id/btnScrollToBottom"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_plus_button"
+                android:src="@drawable/ic_down_arrow"
+                android:contentDescription="@string/description_scroll_to_bottom"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+
+
+
+
+        <HorizontalScrollView
+            android:id="@+id/imagePreviewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="8dp"
+            android:overScrollMode="ifContentScrolls"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/imagePreviewList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+
+
+
+        <!--  ////////////////////////Input bar START /////////////////////////////// -->
+        <LinearLayout
+            android:id="@+id/inputBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+
+            <ImageButton
+                android:id="@+id/plusButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_plus_button"
+                android:src="@drawable/add_button"
+                app:tint="@color/sendIconTint"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/description_add_a_photo" />
+
+            <EditText
+                    android:id="@+id/messageInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_input_field"
+                    android:hint="@string/type_your_message"
+                    android:textColor="@color/textColorMain"
+                    android:textColorHint="@color/text_color_hint"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:imeOptions="actionSend"
+                    android:importantForAutofill="no"
+                    android:minHeight="48dp"
+                    android:maxLines="8"
+                    android:scrollbars="vertical" />
+
+            <ImageButton
+                android:id="@+id/sendButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_send"
+                app:tint="@color/sendIconTint"
+                android:autoMirrored="true"
+                android:contentDescription="@string/description_send_message" />
+        </LinearLayout>
+        <!--  ////////////////////////Input bar END /////////////////////////////// -->
+
+    </LinearLayout>
+
+
+
+
+
+
+    <!--  ////////////////////////Chats and Menu START /////////////////////////////// -->
+
+    <LinearLayout
+        android:id="@+id/drawerPanel"
+        android:layout_width="@dimen/drawerPanel_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:orientation="vertical"
+        android:background="@color/backgroundColor"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
+
+        <!-- Top app title / logo area (optional) -->
+        <TextView
+            android:id="@+id/drawerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/textColorMain"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp" />
+
+        <!-- New chat button -->
+        <LinearLayout
+            android:id="@+id/buttonNewChat"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_new_chat"
+                app:tint="@color/textColorMain"
+                android:contentDescription="@string/description_create_new_chat"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/drawer_new_chat"
+                android:textColor="@color/textColorMain"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Settings -->
+        <LinearLayout
+            android:id="@+id/buttonSettings"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_settings"
+                app:tint="@color/textColorMain"
+                android:contentDescription="@string/description_open_settings"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="@string/drawer_settings"
+                android:textColor="@color/textColorMain"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/buttonNewUserChat"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_person"
+                app:tint="@color/textColorMain"
+                android:contentDescription="Start a direct chat with another user"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="New User Chat"
+                android:textColor="@color/textColorMain"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#33FFFFFF" />
+
+        <!-- Chats header -->
+        <TextView
+            android:id="@+id/textChatsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chats_label"
+            android:textColor="@color/textColorMain"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="4dp" />
+
+        <!-- Chat list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="4dp" />
+
+    </LinearLayout>
+
+    <!--  ////////////////////////Chats and Menu END /////////////////////////////// -->
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

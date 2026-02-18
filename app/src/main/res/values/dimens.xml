@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_message_textSize">16sp</dimen>
+    <dimen name="app_name_text_size">16sp</dimen>
+    <dimen name="menu_button_width">48dp</dimen>
+    <dimen name="drawerPanel_width">280dp</dimen>
+    <dimen name="drawer_chat_title_textSize">16sp</dimen>
+    <dimen name="more_chat_options_size">48dp</dimen>
+    <dimen name="settings_title_text_size">22sp</dimen>
+</resources>

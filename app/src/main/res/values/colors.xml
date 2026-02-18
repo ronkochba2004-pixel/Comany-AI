@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+
+    <color name="backgroundColor">#FFFFFFFF</color>
+
+
+
+    <color name="assistantBubble">#EDE7F6</color>
+    <color name="userBubble">#D1F1E0</color>
+
+    <color name="textColorMain">#FF000000</color>
+
+    <color name="sendIconTint">#FF000000</color>
+    <color name="text_color_hint">#888888</color>
+
+    <color name="input_field_color">#D3D3D3</color>
+    <color name="bg_chat_popup_color">#F5F5F5</color>
+
+    <color name="delete_text_color">#ff0000</color>
+    <color name="settings_icons_color">#ffffff</color>
+    <color name="settings_text_color">#ffffff</color>
+    <color name="settings_background_color">#2B2B2B</color>
+    <color name="settings_answer_text_color">#B3B3B3</color>
+    <color name="bg_settings_section_color">#3d3d3d</color>
+
+</resources>

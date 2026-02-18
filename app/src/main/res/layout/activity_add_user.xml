@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/settings_background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textAddUserTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_a_user"
+            android:textSize="@dimen/settings_title_text_size"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:textColor="@color/settings_text_color"/>
+
+        <!-- Card with fields -->
+        <LinearLayout
+            android:id="@+id/addUserFormCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_settings_section"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- First name -->
+            <TextView
+                android:id="@+id/labelFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_name"
+                android:textColor="@color/settings_text_color"/>
+
+            <EditText
+                android:id="@+id/editFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:paddingBottom="8dp"
+                android:textColor="@color/settings_answer_text_color"
+                android:backgroundTint="@color/settings_text_color"/>
+
+            <!-- Last name -->
+            <TextView
+                android:id="@+id/labelLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_name"
+                android:textColor="@color/settings_text_color"/>
+
+            <EditText
+                android:id="@+id/editLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:singleLine="true"
+                android:paddingBottom="8dp"
+                android:textColor="@color/settings_answer_text_color"
+                android:backgroundTint="@color/settings_text_color"/>
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_addUser"
+                android:textColor="@color/settings_text_color"
+                android:backgroundTint="@color/settings_text_color"/>
+
+            <!-- Email input -->
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/settings_text_color"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@color/settings_answer_text_color" />
+
+            <!-- Email error -->
+            <TextView
+                android:id="@+id/textEmailError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#FF6666"
+                android:paddingBottom="8dp" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/labelID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/id_AddUser"
+                android:textColor="@color/settings_text_color"
+                android:backgroundTint="@color/settings_text_color"/>
+
+            <!-- Email input -->
+            <EditText
+                android:id="@+id/editNationalId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/settings_text_color"
+                android:inputType="number"
+                android:maxLength="9"
+                android:paddingBottom="8dp"
+                android:singleLine="true"
+                android:textColor="@color/settings_answer_text_color" />
+
+            <!-- Email error -->
+            <TextView
+                android:id="@+id/textNationalIdError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#FF6666"
+                android:paddingBottom="8dp" />
+
+            <!-- Password -->
+            <TextView
+                android:id="@+id/labelPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_addUser"
+                android:textColor="@color/settings_text_color"/>
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/settings_answer_text_color"
+                android:backgroundTint="@color/settings_text_color"/>
+
+            <!-- Password error -->
+            <TextView
+                android:id="@+id/textPasswordError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#FF6666"
+                android:paddingBottom="8dp" />
+
+            <!-- Confirm password -->
+            <TextView
+                android:id="@+id/labelConfirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_password_addUser"
+                android:textColor="@color/settings_text_color"/>
+
+            <EditText
+                android:id="@+id/editConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/settings_answer_text_color"
+                android:backgroundTint="@color/settings_text_color"/>
+
+            <!-- Confirm password error -->
+            <TextView
+                android:id="@+id/textConfirmPasswordError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#FF6666"
+                android:paddingBottom="8dp" />
+
+            <!-- Role selection -->
+            <TextView
+                android:id="@+id/labelRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/role_addUser"
+                android:paddingTop="4dp"
+                android:textColor="@color/settings_text_color"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="4dp"
+                android:paddingBottom="8dp">
+
+                <RadioButton
+                    android:id="@+id/radioEmployee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/employee_addUser"
+                    android:checked="true"
+                    android:textColor="@color/settings_answer_text_color"
+                    android:layout_marginEnd="16dp"
+                    app:buttonTint="@color/settings_answer_text_color"/>
+
+                <RadioButton
+                    android:id="@+id/radioAdmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/admin_addUser"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/settings_answer_text_color"
+                    app:buttonTint="@color/settings_answer_text_color"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- Create button -->
+        <Button
+            android:id="@+id/buttonCreateUser"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/create_user_addUser"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#595858"/>
+
+    </LinearLayout>
+</ScrollView>
