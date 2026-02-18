@@ -1,4 +1,4 @@
-הנה הטקסט באנגלית בלבד, מסודר ונקי עבור ה-README.md שלך
+
 Company AI - Android Assistant
 Company AI is a professional, context-aware Android chat application designed for seamless human-AI interaction. Built with a focus on performance and clean UI, the app integrates with the Llama 3.3 model to provide intelligent, real-time responses.
 
